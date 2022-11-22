@@ -20,6 +20,6 @@ const app = express();
 app.use(express.json());
 app.use('/api', routes)
 
-app.listen(3003, () => {
-    console.log(`Server Started at ${3003}`)
+app.listen(3004, () => {
+    console.log(`Server Started at ${3004}`)
 })
