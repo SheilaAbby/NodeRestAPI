@@ -27,10 +27,11 @@ router.get('/getAll', async (req, res) => {
 router.get('/getOne/:id', async (req, res) => {
     try{
         const data = await Model.findById(req.params.id);
-        res.json(data)
+        res.json(data);
+       // res.send(data);
     }
     catch(error){
-        res.status(500).json({message: error.message})
+        res.status(400).json({message: `Item with id ${req.params.id} Not Found`});
     }
 })
 
