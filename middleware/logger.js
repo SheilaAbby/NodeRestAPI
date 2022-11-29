@@ -1,5 +1,4 @@
 const moment = require('moment');
-//init a Middleware
 
 const logger = (req, res, next) => {
     console.log(
@@ -8,4 +7,4 @@ const logger = (req, res, next) => {
     next();
 };
 
-module.exports = logger
+module.exports = logger;
